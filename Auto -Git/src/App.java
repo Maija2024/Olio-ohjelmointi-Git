@@ -8,8 +8,15 @@ public class App {
   auto1.merkki = "Kia";
   auto1.malli = "Stonic";
   auto1.bensanMaara = 5;
+
+  //Olio auto2 luonti
+  Auto auto2 = new Auto("Volkswagen", "Passat", 10);
+
   
-  System.out.println("Auton tiedot:");
+  System.out.println("Auto2 tiedot:");
+  auto2.NaytaTiedot();
+    
+  System.out.println("Auto1 tiedot:");
   auto1.NaytaTiedot();
 
   auto1.Kiihdyta();
@@ -69,7 +76,6 @@ public void tankkaa(int maara) {
   bensanMaara = maara+ bensanMaara; 
   System.out.println("Tankissa bensaa tankkauksen jälkeen: " + bensanMaara);
 
-  
 
 
 
